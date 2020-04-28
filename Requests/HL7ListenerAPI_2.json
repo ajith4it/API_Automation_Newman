@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "b011671f-3442-45da-8992-fbd00b98b9de",
+		"name": "HL7ListenerAPI_2",
+		"description": "TEstOriginal\n\n\nMergeDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllListeners",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "13872110-82ba-4362-b9ef-47248756649b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/acrconnect-hl7-listener-service/api/Listeners",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"acrconnect-hl7-listener-service",
+						"api",
+						"Listeners"
+					]
+				},
+				"description": "This Request Fetches all the available HL7 Listeners"
+			},
+			"response": []
+		},
+		{
+			"name": "GetListenerDetailsByID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d98a4aeb-c435-4357-96ed-05e8b5a0f129",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"dataManagerSourceName\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/acrconnect-hl7-listener-service/api/Listeners/25",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"acrconnect-hl7-listener-service",
+						"api",
+						"Listeners",
+						"25"
+					]
+				},
+				"description": "This Request Fetches HL7 Listeners Based on ID"
+			},
+			"response": []
+		},
+		{
+			"name": "GetListenerDetailsByIDInvalidIDNonInteger",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a35662a1-90fd-49ba-b3e9-da48c54fe955",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"The value 'feef' is not valid\");",
+							"});",
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/acrconnect-hl7-listener-service/api/Listeners/feef",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"acrconnect-hl7-listener-service",
+						"api",
+						"Listeners",
+						"feef"
+					]
+				},
+				"description": "Provides invalid not intger listener id."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "902818a3-a6b3-467b-9af2-e8534e0779c3",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c4a5cacf-94b5-4be7-a809-bf7147e87ee6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

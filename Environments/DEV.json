@@ -1,0 +1,44 @@
+{
+	"id": "8cc1c17b-983a-3f65-149e-f369e947cd83",
+	"name": "DEV",
+	"values": [
+		{
+			"key": "URL",
+			"value": "dev-connectapi.acr.org",
+			"enabled": true
+		},
+		{
+			"key": "Authorization",
+			"value": "eyJhbGciOiJSUzI1NiIsIng1dCI6InJtcTVuV2VfVW9CWnIzcTFaeUMxN19CMU51dyIsImtpZCI6InJtcTVuV2VfVW9CWnIzcTFaeUMxN19CMU51dyIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1M2Y5NGMwODczY2M0ZjhkYjY2NTMwOTQ4OTYwODEwMCIsImNsaWVudF9pZCI6IjY0OGRiYTNhODBjNDQ5YWI5YTljNTUyNjlkYjgyODhhIiwic2NvcGUiOlsiaXJfZGF0YV9zdWJtaXNzaW9uIiwib3BlbmlkIl0sInN1YiI6IlJlbXlhT21hbmEiLCJhdXRoX3RpbWUiOjE1NTQzNzI0NDAsImlkcCI6IlNlY3VyZUF1dGg4IiwiYW1yIjpbInBhc3N3b3JkIiwiY2xpZW50Il0sImlzcyI6Imh0dHBzOi8vQUNSLUlELVRFU1QuYWNyLm9yZy9OUkRSLVVzZXJMb2dpbiIsImF1ZCI6Imh0dHBzOi8vQUNSLUlELVRFU1QuYWNyLm9yZy9OUkRSLVVzZXJMb2dpbiIsImV4cCI6MTU1NDQ1ODgzOSwibmJmIjoxNTU0MzcyNDM5fQ.iN0wIOEGMJul1O0RCmeceABbjgU5d2ore9Vu36SY-KQlSJs2W-1Pmw3RP0m0ul7E2adPgkkbzStOxFs6ZnMRdzF2ZbwHDGB-RWRoQJ9LrbUc6fE3-8atcxwLDQeapJ6VPy6SH2nBW4eYbXnidptxyt117mDSDJlSlCGoJrYiHo2e07xrM3-Y0ObHpFObHqg_38l6VUmgVGSxQXe8RJJNTXhfDW6FvzTf_LD0n6YJtS-rYCB79Pe02qA2FwefM_lEr9uRUpqFhpdWxWV3jId1cKkbXaJZnT-_wlnpbWgMjYU82e3oIssb19fipdKMK5COV6FreFCQv15FHz6cOkSdjw",
+			"enabled": true
+		},
+		{
+			"key": "CUREAuthorization",
+			"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImlBRmdfVFBBczdIYzU1TmpxczV5ZGo1OE8yUSJ9.eyJpc3MiOiJ1YXQtY29ubmVjdCIsImF1ZCI6IlVQRU5OIiwiZXhwIjoxNTUyMDMwMzY0LCJuYmYiOjE1MjA0OTQzNjQsInNjb3BlIjpbImN1cmVfZGF0YV9zdWJtaXNzaW9uIiwiY3VyZV9kYXRhX3JldHJpZXZhbCJdLCJjbGllbnRfaWQiOiJVUEVOTiJ9.HFDGruQjuQP6MUtIi3sKfWufP1E_iEzXeawl6oiv-102VAXNWlPRuFMr3AannVkPhEqmkSSFIqCrrJ22R495qlm6jiCmYDgREpf1RYEZdib0gbBRhMXh5XA6MfNwCUCA_wdoj-ig89d9FOEDy6O7DlQgyjNedYwqFs4MUwh8j0Iwdp8XicE3v2cNml0HIrQVOghi9aPTGBEpgBbta0bOnzq5P0h3SPruXdCh9Hi7l2nSBtC0_EAAuYKY2r15m3h-3-uBRUcK-HRNPn1eAmD-FAB0TTFx-5iRzoJp5kOgz1GdbnceZG3U-m0tznQkqJ45uWG8kZ2alcfiVvyjJfYUIg",
+			"enabled": true
+		},
+		{
+			"key": "reportid",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "TIRADSAuthotization",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImlBRmdfVFBBczdIYzU1TmpxczV5ZGo1OE8yUSJ9.eyJpc3MiOiJ1YXQtY29ubmVjdCIsImF1ZCI6IkpPSE5TSE9QS0lOUyIsImV4cCI6MTU3MTk4ODM1MiwibmJmIjoxNTQwNDUyMzUyLCJzY29wZSI6WyJ0aXJhZHNfZGF0YV9zdWJtaXNzaW9uIl0sImNsaWVudF9pZCI6IlRpcmFkc1Rlc3QifQ.o1cPG5g-5YTevOWy3bdi97tf4b1_qt8twLhpFNy-nEn9g524mc_U74ZfwRE6luQuALcrKuksVHMWbpCVNAjBeIeYCX-7mR8z_nrXH6KlzEBFZAZtuG4UAmWYQ39ak4m_eMMMXtOtBZHmXVGxm_8n0z37cOLbxZoy8lH6zcgmjjc6g0Mm7nApASg1021QObYdCIlW2CK2D56jRT_tAuELO9IczhGq9i7TLCCoOno1E2qTFJUzBkawBho5joZqecj_LPaFMCE5LwAMfwSJ-bJ5WKH6ENgR4j6AoY94JHoMgXdjxpxIxtjSqhb_EiufU0KgxL6Ml32axIrYWnusYXEKAQ",
+			"enabled": true
+		},
+		{
+			"key": "Date",
+			"value": "20180630",
+			"enabled": true
+		},
+		{
+			"key": "baseUrl",
+			"value": " https://connect-dev.acr.org/gateway",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2020-04-22T11:46:50.912Z",
+	"_postman_exported_using": "Postman/7.22.1"
+}

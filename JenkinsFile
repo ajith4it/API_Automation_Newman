@@ -1,0 +1,25 @@
+   node {
+      stage('API Automation Demo - Fetching Files from Github') {
+        git 'https://github.com/ajith4it/APIAutomationNewman.git'
+        }
+        stage('Install node dependencies'){
+        bat 'npm install'
+        bat 'npm install newman'
+        bat 'npm install newman-reporter-htmlextra'
+        }
+        stage('Run API Tests')
+        {
+        bat 'npm run api-tests1'
+        bat  'npm run api-tests2'
+      publishHTML([allowMissing: false, 
+      alwaysLinkToLastBuild: false, 
+      keepAll: true, 
+      reportDir: 'newman', 
+      reportFiles: 'HL7ListenerAPIReport1.html,HL7ListenerAPIReport2.html', 
+      reportName: 'API Execution Report(HTML)', reportTitles: ''])
+               
+         }
+         
+      }
+      
+    

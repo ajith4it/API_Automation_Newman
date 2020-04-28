@@ -1,0 +1,20 @@
+{
+  "name": "apiautomationnewman",
+  "version": "1.0.0",
+  "description": "Api Automation using newman",
+  "scripts": {
+    "api-tests1": "newman run Requests/HL7ListenerAPI.json --environment Environments/DEV.json -r cli,htmlextra --reporter-htmlextra-export newman/HL7ListenerAPIReport1.html  --reporter-htmlextra-title API-Test --disable-unicode",
+    "api-tests2": "newman run Requests/HL7ListenerAPI_2.json --environment Environments/DEV.json -r cli,htmlextra --reporter-htmlextra-export newman/HL7ListenerAPIReport2.html  --reporter-htmlextra-title API-Test2 --disable-unicode"
+  },
+  "keywords": [
+    "postman",
+    "newman",
+    "API"
+  ],
+  "author": "Ajith R Pillai",
+  "dependencies": {
+    "newman": "^5.0.0",
+    "newman-reporter-htmlextra": "^1.14.1"
+    
+  }
+}
