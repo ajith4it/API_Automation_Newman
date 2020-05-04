@@ -1,6 +1,6 @@
    node {
       stage('API Automation Demo - Fetching Files from Github') {
-        git 'https://github.com/ajith4it/APIAutomationNewman.git'
+        git 'https://github.com/ajith4it/API_Automation_Newman.git'
         }
         stage('Install node dependencies'){
         bat 'npm install'
