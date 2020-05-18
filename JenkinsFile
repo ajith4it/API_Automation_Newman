@@ -2,12 +2,7 @@
       stage('API Automation Demo - Fetching Files from Github') {
         git 'https://github.com/ajith4it/API_Automation_Newman.git'
         }
-        stage('Install node dependencies'){
-        bat 'npm install'
-        bat 'npm install newman'
-        bat 'npm install newman-reporter-htmlextra'
-        }
-        stage('Run API Tests')
+       stage('Run API Tests')
         {
         bat 'npm run api-tests1'
         bat  'npm run api-tests2'
