@@ -6,12 +6,16 @@
         {
         bat 'npm run api-tests1'
         bat  'npm run api-tests2'
+        }
+        stage('Publish HTML Report')
+        {
       publishHTML([allowMissing: false, 
       alwaysLinkToLastBuild: false, 
       keepAll: true, 
       reportDir: 'newman', 
       reportFiles: 'HL7ListenerAPIReport1.html,HL7ListenerAPIReport2.html', 
       reportName: 'API Execution Report(HTML)', reportTitles: ''])
+        }
                
          }
          
